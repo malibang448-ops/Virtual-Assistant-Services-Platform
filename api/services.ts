@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { getDbState } from "../src/lib/db";
+import { getDbState } from "./lib/db";
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   const db = getDbState();
