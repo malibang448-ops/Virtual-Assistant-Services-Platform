@@ -1,3 +1,4 @@
+// Vesta Virtual Assistant Services Platform: Services API
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { getDbState } from "./lib/db";
 
