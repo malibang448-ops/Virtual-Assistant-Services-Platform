@@ -1,0 +1,6 @@
+{
+  "name": "Virtual Assistant Services Platform",
+  "description": "An intelligent portal for virtual assistant matchmaking, featuring an AI request matcher, real-time agent profiles, and automated booking.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
