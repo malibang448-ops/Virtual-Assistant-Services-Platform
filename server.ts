@@ -685,9 +685,15 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`=== Vesta Platform Express Server Running on http://0.0.0.0:${PORT} ===`);
-  });
+  // Only listen if not on Vercel
+  if (process.env.NODE_ENV !== "production" || !process.env.VERCEL) {
+    app.listen(PORT, "0.0.0.0", () => {
+      console.log(`=== Vesta Platform Express Server Running on http://0.0.0.0:${PORT} ===`);
+    });
+  }
 }
 
 startServer();
+
+// Export app for Vercel
+export default app;
